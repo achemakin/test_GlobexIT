@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Отчет</title>
+
+  <link rel="preload" href="./fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/OpenSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="vendor/hystmodal.min.css">
+  <script defer src="vendor/hystmodal.min.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <form class="search js-search-submit" name="search">
+        <input class="search__input js-search" type="text" name="searchInput">
+
+        <button class="search__button js-btn-search" type="submit">
+          <svg class="search__icon" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="./img/sprite.svg#search" />
+          </svg>
+        </button>
+      </form>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <h1 class="visually-hidden">Отчет</h1>
+
+      <div class="main__wrapper">
+        <svg class="preloader preloader--load js-preloader" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink">
+          <use xlink:href="./img/sprite.svg#preloader" />
+        </svg>
+
+        <ul class="main__list list-reset js-users"></ul>
+      </div>
+    </div>
+  </main>
+
+  <div class="hystmodal modal" id="userModal" aria-hidden="true">
+    <div class="hystmodal__wrap">
+      <div class="hystmodal__window modal__window js-modal" role="dialog" aria-modal="true"></div>
+    </div>
+  </div>
+</body>
+
+</html>
